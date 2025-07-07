@@ -39,7 +39,7 @@ const AppointmentCalendar = ({ onSelectAppointment, onAddAppointment }) => {
   const calendarDays = eachDayOfInterval({ start: monthStart, end: monthEnd });
 
   const getAppointmentsForDate = (date) => {
-    return appointments.filter(apt => 
+return appointments.filter(apt => 
       isSameDay(new Date(apt.date), date)
     );
   };
@@ -174,11 +174,11 @@ const AppointmentCalendar = ({ onSelectAppointment, onAddAppointment }) => {
               >
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
-                    <p className="font-medium text-gray-900">
+<p className="font-medium text-gray-900">
                       {appointment.time}
                     </p>
                     <p className="text-sm text-gray-600">
-                      {appointment.patientName}
+                      {appointment.patient_name}
                     </p>
                     <p className="text-sm text-gray-500">
                       {appointment.type}

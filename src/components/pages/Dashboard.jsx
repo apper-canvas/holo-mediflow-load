@@ -141,8 +141,8 @@ const Dashboard = () => {
                       <ApperIcon name="Clock" size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900">{appointment.time}</p>
-                      <p className="text-sm text-gray-600">{appointment.patientName}</p>
+<p className="font-medium text-gray-900">{appointment.time}</p>
+                      <p className="text-sm text-gray-600">{appointment.patient_name}</p>
                       <p className="text-sm text-gray-500">{appointment.type}</p>
                     </div>
                   </div>
@@ -182,12 +182,12 @@ const Dashboard = () => {
                       <ApperIcon name="User" size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900">
-                        {patient.firstName} {patient.lastName}
+<p className="font-medium text-gray-900">
+                        {patient.first_name} {patient.last_name}
                       </p>
                       <p className="text-sm text-gray-600">{patient.phone}</p>
                       <p className="text-sm text-gray-500">
-                        {format(new Date(patient.dateOfBirth), 'MMM dd, yyyy')}
+                        {format(new Date(patient.date_of_birth), 'MMM dd, yyyy')}
                       </p>
                     </div>
                   </div>

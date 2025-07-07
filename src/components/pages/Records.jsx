@@ -35,8 +35,8 @@ const Records = () => {
     }
   };
 
-  const filteredRecords = records.filter(record =>
-    record.patientName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+const filteredRecords = records.filter(record =>
+    record.patient_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     record.diagnosis.toLowerCase().includes(searchTerm.toLowerCase()) ||
     record.symptoms.some(symptom => symptom.toLowerCase().includes(searchTerm.toLowerCase()))
   );
@@ -110,7 +110,7 @@ const Records = () => {
                           <ApperIcon name="User" size={16} className="text-white" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900">{record.patientName}</h3>
+<h3 className="font-semibold text-gray-900">{record.patient_name}</h3>
                           <p className="text-sm text-gray-600">
                             {format(new Date(record.date), 'MMM dd, yyyy')}
                           </p>

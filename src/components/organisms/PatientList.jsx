@@ -32,9 +32,9 @@ const PatientList = ({ onSelectPatient, onAddPatient, searchTerm = '' }) => {
     }
   };
 
-  const filteredPatients = patients.filter(patient =>
-    patient.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    patient.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+const filteredPatients = patients.filter(patient =>
+    patient.first_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    patient.last_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     patient.phone.includes(searchTerm) ||
     patient.email.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -69,11 +69,11 @@ const PatientList = ({ onSelectPatient, onAddPatient, searchTerm = '' }) => {
                   <ApperIcon name="User" size={24} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">
-                    {patient.firstName} {patient.lastName}
+<h3 className="font-semibold text-gray-900">
+                    {patient.first_name} {patient.last_name}
                   </h3>
                   <p className="text-sm text-gray-600">
-                    DOB: {format(new Date(patient.dateOfBirth), 'MMM dd, yyyy')}
+                    DOB: {format(new Date(patient.date_of_birth), 'MMM dd, yyyy')}
                   </p>
                   <p className="text-sm text-gray-600">
                     {patient.phone} • {patient.email}
@@ -82,8 +82,8 @@ const PatientList = ({ onSelectPatient, onAddPatient, searchTerm = '' }) => {
               </div>
               <div className="flex items-center space-x-4">
                 <div className="text-right">
-                  <p className="text-sm font-medium text-gray-900">
-                    {patient.bloodType}
+<p className="text-sm font-medium text-gray-900">
+                    {patient.blood_type}
                   </p>
                   <p className="text-sm text-gray-600">
                     {patient.gender}

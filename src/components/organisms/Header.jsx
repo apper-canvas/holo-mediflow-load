@@ -1,21 +1,27 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useContext } from 'react';
+import { useSelector } from 'react-redux';
 import Button from '@/components/atoms/Button';
 import SearchBar from '@/components/molecules/SearchBar';
 import ApperIcon from '@/components/ApperIcon';
+import { AuthContext } from '@/App';
 
 const Header = ({ onMenuToggle, onSearch }) => {
-  const [notifications] = useState([
-    { id: 1, message: 'New appointment scheduled', time: '5 min ago' },
-    { id: 2, message: 'Patient record updated', time: '15 min ago' },
-    { id: 3, message: 'Lab results available', time: '1 hour ago' }
-  ]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const { user, isAuthenticated } = useSelector((state) => state.user);
+  const { logout } = useContext(AuthContext);
 
-  const [showNotifications, setShowNotifications] = useState(false);
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+    onSearch(term);
+  };
+
+  const handleLogout = async () => {
+    await logout();
+  };
 
   return (
-    <header className="bg-white border-b border-gray-200 h-16 flex items-center px-4 lg:px-6">
-      <div className="flex items-center justify-between w-full">
+    <header className="bg-white border-b border-gray-200 px-6 py-4">
+      <div className="flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <Button
             variant="ghost"
@@ -26,57 +32,48 @@ const Header = ({ onMenuToggle, onSearch }) => {
           />
           <div className="hidden md:block">
             <SearchBar
-              onSearch={onSearch}
+              onSearch={handleSearch}
               placeholder="Search patients, appointments..."
               showButton={false}
-              className="w-80"
             />
           </div>
         </div>
 
         <div className="flex items-center space-x-4">
-          <div className="relative">
-            <Button
-              variant="ghost"
-              size="sm"
-              icon="Bell"
-              onClick={() => setShowNotifications(!showNotifications)}
-              className="relative"
-            >
-              {notifications.length > 0 && (
-                <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
-                  {notifications.length}
-                </span>
-              )}
-            </Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            icon="Bell"
+            className="relative"
+          >
+            <span className="absolute -top-1 -right-1 h-4 w-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
+              3
+            </span>
+          </Button>
 
-            {showNotifications && (
-              <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-50"
+          {isAuthenticated && user && (
+            <div className="flex items-center space-x-3">
+              <div className="text-right">
+                <p className="text-sm font-medium text-gray-900">
+                  {user.firstName} {user.lastName}
+                </p>
+                <p className="text-xs text-gray-500">
+                  {user.emailAddress}
+                </p>
+              </div>
+              <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                <ApperIcon name="User" size={16} className="text-white" />
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                icon="LogOut"
+                onClick={handleLogout}
               >
-                <div className="p-4 border-b border-gray-200">
-                  <h3 className="font-semibold text-gray-900">Notifications</h3>
-                </div>
-                <div className="max-h-64 overflow-y-auto">
-                  {notifications.map((notification) => (
-                    <div key={notification.id} className="p-4 border-b border-gray-100 hover:bg-gray-50">
-                      <p className="text-sm text-gray-900">{notification.message}</p>
-                      <p className="text-xs text-gray-500 mt-1">{notification.time}</p>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            )}
-          </div>
-
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-              <ApperIcon name="User" size={16} className="text-white" />
+                Logout
+              </Button>
             </div>
-            <span className="hidden md:inline text-sm font-medium text-gray-700">Dr. Smith</span>
-          </div>
+          )}
         </div>
       </div>
     </header>

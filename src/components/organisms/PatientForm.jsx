@@ -8,18 +8,18 @@ import ApperIcon from '@/components/ApperIcon';
 import { patientService } from '@/services/api/patientService';
 
 const PatientForm = ({ patient = null, onSave, onCancel }) => {
-  const [formData, setFormData] = useState({
-    firstName: patient?.firstName || '',
-    lastName: patient?.lastName || '',
-    dateOfBirth: patient?.dateOfBirth || '',
+const [formData, setFormData] = useState({
+    firstName: patient?.first_name || '',
+    lastName: patient?.last_name || '',
+    dateOfBirth: patient?.date_of_birth || '',
     gender: patient?.gender || 'Male',
     phone: patient?.phone || '',
     email: patient?.email || '',
     address: patient?.address || '',
-    bloodType: patient?.bloodType || 'O+',
-    allergies: patient?.allergies?.join(', ') || '',
-    emergencyContactName: patient?.emergencyContact?.name || '',
-    emergencyContactPhone: patient?.emergencyContact?.phone || ''
+    bloodType: patient?.blood_type || 'O+',
+    allergies: patient?.allergies?.split(',').join(', ') || '',
+    emergencyContactName: patient?.emergency_contact_name || '',
+    emergencyContactPhone: patient?.emergency_contact_phone || ''
   });
 
   const [loading, setLoading] = useState(false);

@@ -54,8 +54,8 @@ const Reports = () => {
     .sort(([,a], [,b]) => b - a)
     .slice(0, 5);
 
-  const ageGroups = data.patients.reduce((acc, patient) => {
-    const age = new Date().getFullYear() - new Date(patient.dateOfBirth).getFullYear();
+const ageGroups = data.patients.reduce((acc, patient) => {
+    const age = new Date().getFullYear() - new Date(patient.date_of_birth).getFullYear();
     if (age < 18) acc['Under 18']++;
     else if (age < 30) acc['18-30']++;
     else if (age < 50) acc['31-50']++;
