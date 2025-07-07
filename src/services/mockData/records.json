@@ -1,0 +1,155 @@
+[
+  {
+    "Id": 1,
+    "patientId": "1",
+    "patientName": "John Smith",
+    "appointmentId": "3",
+    "date": "2024-01-15",
+    "diagnosis": "Hypertension",
+    "symptoms": ["Headache", "Dizziness"],
+    "treatment": "Prescribed ACE inhibitor, lifestyle changes recommended",
+    "notes": "Patient reports good compliance with medication. Blood pressure improving.",
+    "vitals": {
+      "bloodPressure": "140/90",
+      "heartRate": "72",
+      "temperature": "98.6",
+      "weight": "185"
+    }
+  },
+  {
+    "Id": 2,
+    "patientId": "2",
+    "patientName": "Sarah Johnson",
+    "appointmentId": "2",
+    "date": "2024-01-15",
+    "diagnosis": "Asthma",
+    "symptoms": ["Wheezing", "Shortness of breath"],
+    "treatment": "Inhaler prescription updated, allergy testing recommended",
+    "notes": "Patient's asthma well controlled with current medication regimen.",
+    "vitals": {
+      "bloodPressure": "120/80",
+      "heartRate": "68",
+      "temperature": "98.4",
+      "weight": "125"
+    }
+  },
+  {
+    "Id": 3,
+    "patientId": "3",
+    "patientName": "Robert Williams",
+    "appointmentId": "1",
+    "date": "2024-01-15",
+    "diagnosis": "Hyperlipidemia",
+    "symptoms": ["Fatigue"],
+    "treatment": "Statin therapy initiated, dietary consultation scheduled",
+    "notes": "Cholesterol levels elevated. Patient counseled on diet and exercise.",
+    "vitals": {
+      "bloodPressure": "135/85",
+      "heartRate": "75",
+      "temperature": "98.7",
+      "weight": "210"
+    }
+  },
+  {
+    "Id": 4,
+    "patientId": "4",
+    "patientName": "Emily Davis",
+    "appointmentId": "4",
+    "date": "2024-01-16",
+    "diagnosis": "Healthy",
+    "symptoms": [],
+    "treatment": "No treatment needed, routine preventive care discussed",
+    "notes": "Annual physical exam. All parameters normal. Vaccines up to date.",
+    "vitals": {
+      "bloodPressure": "115/75",
+      "heartRate": "65",
+      "temperature": "98.5",
+      "weight": "135"
+    }
+  },
+  {
+    "Id": 5,
+    "patientId": "5",
+    "patientName": "Michael Brown",
+    "appointmentId": "5",
+    "date": "2024-01-16",
+    "diagnosis": "Osteoarthritis",
+    "symptoms": ["Joint pain", "Stiffness"],
+    "treatment": "NSAIDs prescribed, physical therapy referral",
+    "notes": "Arthritis symptoms managed with medication. Patient responding well to PT.",
+    "vitals": {
+      "bloodPressure": "145/92",
+      "heartRate": "78",
+      "temperature": "98.3",
+      "weight": "195"
+    }
+  },
+  {
+    "Id": 6,
+    "patientId": "6",
+    "patientName": "Lisa Miller",
+    "appointmentId": "6",
+    "date": "2024-01-17",
+    "diagnosis": "Migraine",
+    "symptoms": ["Severe headache", "Nausea", "Light sensitivity"],
+    "treatment": "Triptan medication prescribed, trigger identification discussed",
+    "notes": "Patient experiencing frequent migraines. Preventive medication considered.",
+    "vitals": {
+      "bloodPressure": "110/70",
+      "heartRate": "62",
+      "temperature": "98.2",
+      "weight": "140"
+    }
+  },
+  {
+    "Id": 7,
+    "patientId": "8",
+    "patientName": "Jennifer Taylor",
+    "appointmentId": "8",
+    "date": "2024-01-18",
+    "diagnosis": "Hypothyroidism",
+    "symptoms": ["Fatigue", "Weight gain", "Cold intolerance"],
+    "treatment": "Levothyroxine dose adjustment, follow-up labs in 6 weeks",
+    "notes": "TSH levels elevated. Medication dose increased. Patient educated on symptoms.",
+    "vitals": {
+      "bloodPressure": "125/82",
+      "heartRate": "58",
+      "temperature": "97.8",
+      "weight": "155"
+    }
+  },
+  {
+    "Id": 8,
+    "patientId": "1",
+    "patientName": "John Smith",
+    "appointmentId": "9",
+    "date": "2024-01-19",
+    "diagnosis": "Diabetes Type 2",
+    "symptoms": ["Increased thirst", "Frequent urination"],
+    "treatment": "Metformin prescribed, diabetes education scheduled",
+    "notes": "New diagnosis of diabetes. Patient counseled on lifestyle modifications.",
+    "vitals": {
+      "bloodPressure": "138/88",
+      "heartRate": "74",
+      "temperature": "98.6",
+      "weight": "190"
+    }
+  },
+  {
+    "Id": 9,
+    "patientId": "2",
+    "patientName": "Sarah Johnson",
+    "appointmentId": "10",
+    "date": "2024-01-22",
+    "diagnosis": "Acute Asthma Exacerbation",
+    "symptoms": ["Severe wheezing", "Difficulty breathing", "Chest tightness"],
+    "treatment": "Nebulizer treatment, oral corticosteroids prescribed",
+    "notes": "Emergency visit for acute asthma attack. Responded well to treatment.",
+    "vitals": {
+      "bloodPressure": "130/85",
+      "heartRate": "95",
+      "temperature": "99.1",
+      "weight": "125"
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "patientId": "1",
+    "patientName": "John Smith",
+    "date": "2024-01-15",
+    "time": "09:00 AM",
+    "duration": 30,
+    "type": "Regular Checkup",
+    "status": "Scheduled",
+    "notes": "Annual physical examination",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 2,
+    "patientId": "2",
+    "patientName": "Sarah Johnson",
+    "date": "2024-01-15",
+    "time": "10:30 AM",
+    "duration": 45,
+    "type": "Follow-up",
+    "status": "Confirmed",
+    "notes": "Asthma follow-up appointment",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 3,
+    "patientId": "3",
+    "patientName": "Robert Williams",
+    "date": "2024-01-15",
+    "time": "02:00 PM",
+    "duration": 30,
+    "type": "Consultation",
+    "status": "Completed",
+    "notes": "Cholesterol management consultation",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 4,
+    "patientId": "4",
+    "patientName": "Emily Davis",
+    "date": "2024-01-16",
+    "time": "11:00 AM",
+    "duration": 30,
+    "type": "Regular Checkup",
+    "status": "Scheduled",
+    "notes": "First time patient visit",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 5,
+    "patientId": "5",
+    "patientName": "Michael Brown",
+    "date": "2024-01-16",
+    "time": "03:30 PM",
+    "duration": 45,
+    "type": "Follow-up",
+    "status": "Confirmed",
+    "notes": "Arthritis management follow-up",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 6,
+    "patientId": "6",
+    "patientName": "Lisa Miller",
+    "date": "2024-01-17",
+    "time": "09:30 AM",
+    "duration": 30,
+    "type": "Consultation",
+    "status": "Scheduled",
+    "notes": "Migraine consultation",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 7,
+    "patientId": "7",
+    "patientName": "Christopher Wilson",
+    "date": "2024-01-17",
+    "time": "01:00 PM",
+    "duration": 30,
+    "type": "Follow-up",
+    "status": "Cancelled",
+    "notes": "Back pain follow-up - patient cancelled",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 8,
+    "patientId": "8",
+    "patientName": "Jennifer Taylor",
+    "date": "2024-01-18",
+    "time": "10:00 AM",
+    "duration": 45,
+    "type": "Regular Checkup",
+    "status": "Scheduled",
+    "notes": "Thyroid condition monitoring",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 9,
+    "patientId": "1",
+    "patientName": "John Smith",
+    "date": "2024-01-19",
+    "time": "02:30 PM",
+    "duration": 30,
+    "type": "Follow-up",
+    "status": "Scheduled",
+    "notes": "Blood pressure check",
+    "practitioner": "Dr. Smith"
+  },
+  {
+    "Id": 10,
+    "patientId": "2",
+    "patientName": "Sarah Johnson",
+    "date": "2024-01-22",
+    "time": "11:30 AM",
+    "duration": 30,
+    "type": "Emergency",
+    "status": "Completed",
+    "notes": "Acute asthma attack",
+    "practitioner": "Dr. Smith"
+  }
+]

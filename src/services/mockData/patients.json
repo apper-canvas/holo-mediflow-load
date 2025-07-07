@@ -1,0 +1,138 @@
+[
+  {
+    "Id": 1,
+    "firstName": "John",
+    "lastName": "Smith",
+    "dateOfBirth": "1985-06-15",
+    "gender": "Male",
+    "phone": "(555) 123-4567",
+    "email": "john.smith@email.com",
+    "address": "123 Main St, Anytown, ST 12345",
+    "bloodType": "A+",
+    "allergies": ["Penicillin", "Shellfish"],
+    "emergencyContact": {
+      "name": "Jane Smith",
+      "phone": "(555) 123-4568"
+    },
+    "medicalHistory": ["Hypertension", "Diabetes Type 2"]
+  },
+  {
+    "Id": 2,
+    "firstName": "Sarah",
+    "lastName": "Johnson",
+    "dateOfBirth": "1990-03-22",
+    "gender": "Female",
+    "phone": "(555) 987-6543",
+    "email": "sarah.johnson@email.com",
+    "address": "456 Oak Ave, Somewhere, ST 67890",
+    "bloodType": "O-",
+    "allergies": ["Latex"],
+    "emergencyContact": {
+      "name": "Michael Johnson",
+      "phone": "(555) 987-6544"
+    },
+    "medicalHistory": ["Asthma"]
+  },
+  {
+    "Id": 3,
+    "firstName": "Robert",
+    "lastName": "Williams",
+    "dateOfBirth": "1978-11-08",
+    "gender": "Male",
+    "phone": "(555) 456-7890",
+    "email": "robert.williams@email.com",
+    "address": "789 Pine Rd, Elsewhere, ST 54321",
+    "bloodType": "B+",
+    "allergies": ["Nuts"],
+    "emergencyContact": {
+      "name": "Mary Williams",
+      "phone": "(555) 456-7891"
+    },
+    "medicalHistory": ["High Cholesterol"]
+  },
+  {
+    "Id": 4,
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "dateOfBirth": "1992-09-12",
+    "gender": "Female",
+    "phone": "(555) 321-0987",
+    "email": "emily.davis@email.com",
+    "address": "321 Elm St, Nowhere, ST 09876",
+    "bloodType": "AB+",
+    "allergies": [],
+    "emergencyContact": {
+      "name": "David Davis",
+      "phone": "(555) 321-0988"
+    },
+    "medicalHistory": []
+  },
+  {
+    "Id": 5,
+    "firstName": "Michael",
+    "lastName": "Brown",
+    "dateOfBirth": "1965-12-30",
+    "gender": "Male",
+    "phone": "(555) 654-3210",
+    "email": "michael.brown@email.com",
+    "address": "654 Cedar Ln, Anyplace, ST 13579",
+    "bloodType": "O+",
+    "allergies": ["Aspirin"],
+    "emergencyContact": {
+      "name": "Linda Brown",
+      "phone": "(555) 654-3211"
+    },
+    "medicalHistory": ["Arthritis", "Heart Disease"]
+  },
+  {
+    "Id": 6,
+    "firstName": "Lisa",
+    "lastName": "Miller",
+    "dateOfBirth": "1988-07-25",
+    "gender": "Female",
+    "phone": "(555) 789-0123",
+    "email": "lisa.miller@email.com",
+    "address": "987 Maple Dr, Somewhere Else, ST 24680",
+    "bloodType": "A-",
+    "allergies": ["Sulfa drugs"],
+    "emergencyContact": {
+      "name": "James Miller",
+      "phone": "(555) 789-0124"
+    },
+    "medicalHistory": ["Migraines"]
+  },
+  {
+    "Id": 7,
+    "firstName": "Christopher",
+    "lastName": "Wilson",
+    "dateOfBirth": "1975-04-18",
+    "gender": "Male",
+    "phone": "(555) 147-2580",
+    "email": "christopher.wilson@email.com",
+    "address": "147 Birch Way, Other Town, ST 97531",
+    "bloodType": "B-",
+    "allergies": ["Eggs"],
+    "emergencyContact": {
+      "name": "Patricia Wilson",
+      "phone": "(555) 147-2581"
+    },
+    "medicalHistory": ["Back Pain"]
+  },
+  {
+    "Id": 8,
+    "firstName": "Jennifer",
+    "lastName": "Taylor",
+    "dateOfBirth": "1993-01-14",
+    "gender": "Female",
+    "phone": "(555) 258-1470",
+    "email": "jennifer.taylor@email.com",
+    "address": "258 Spruce St, New Place, ST 86420",
+    "bloodType": "AB-",
+    "allergies": ["Iodine"],
+    "emergencyContact": {
+      "name": "Robert Taylor",
+      "phone": "(555) 258-1471"
+    },
+    "medicalHistory": ["Thyroid Disease"]
+  }
+]
